@@ -1,0 +1,18 @@
+{
+  "name": "nodejs-angularjs-min-beispiel",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "express-request-logger": "^0.0.3",
+    "express": "^3.10.5"
+  },
+  "devDependencies": {
+    "express": "^3.10.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
