@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html ng-app="bienvenueenfrancaisApp">
+<head>
+  <meta charset="utf8">
+  <title>BIENVENUEenFRANCAIS !  </title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/main.css">
+</head> 
+<body>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">macht die Scheiße</script> 
+	<script src="../js/app.js"></script>	
+	<script src="../js/directives/directives_page1.js"></script>	
+</head>
+<body> 
+	   
+ 
+  
+	<table  style="cursor:pointer" class="table" ng-controller="SlicedsprachenCtrl">	
+	 
+
+ <tr >	 
+			<td   ng-repeat='S   in   slicedsprachen 	 '   >
+			<span ng-click =" Sprachenauswahl(S.Sprache)" class="Sprachen" >  
+				<div ng-mouseover="ueber_die_Sprache_wanken(S.Sprache)"
+					 id="linkausgewaehlt{{S.Sprache}}"   >  
+				</div>  	 						  
+			</span>  		 
+			</td>  
+		</tr> 	
+	</table>   
+		
+<div ng-controller="SlicedsprachenCtrl" ng-init="sssssssssje_nachdem()  ">  
+</div> 
+ 
+	<div id="Hauptkoerper"><p>Gr&uuml;&szlig; Gott!
+		<br>
+		
+		Ich heisse Jean-Michel Lorenzi. 
+	</p>
+	<p>	Ich unterrichte auch nicht strukturierte in Kaffeehaus geführte Kurse. 
+	<br>Die Preise für einen <a href="http://bienvenueenfrancais.wikia.com/wiki/BienvenueEnFrancais">Unterricht </a>:
+	<br>
+	</p>
+	</div> 
+	<div> 
+	<table class="table" ng-controller="PreistabelleCtrl">
+		<tr ng-repeat="row in Preistabelle  ">
+			<td>{{row.Sprache}}</td> 
+			<td>{{row.Preis}}</td> 
+		</tr>
+	</table> 
+ 
+	   
+ 
+</body>
+</html>
