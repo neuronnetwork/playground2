@@ -32,7 +32,7 @@ exp.get('/test1', function(req, res) {
 }); 
 exp.get('/JSON_Uebersetzungen', function(req, res) {  
 	console.log('serving JSON_Uebersetzungen');
-	var Uebersetzungen=JSON.parse(fs.readFileSync("../databases/Uebersetzungen"+".json","utf-8"));   
+	var Uebersetzungen=JSON.parse(fs.readFileSync("../client/js/databases/Uebersetzungen"+".json","utf-8"));   
     res.json(Uebersetzungen);
 });
 exp.get('/ausgewaehltFranz', function(req, res) {  
@@ -40,8 +40,7 @@ exp.get('/ausgewaehltFranz', function(req, res) {
 	res.writeHead(200, {"Content-Type": "text/html"});
 	res.write("<html><body><p>Bonjour!</p> "); 
 	res.write(" <p> "); 
-	res.write("  Je m'appelle jean-michel lorenzi.<br>"); 
-	res.write("  Je donne des cours de Fran&ccedil;ais.");  
+	res.write("  Je m'appelle jean-michel lorenzi.<br>");  
 	res.write(" <p> "); 
 	res.write("</body></html>");
 	res.end()
@@ -53,8 +52,7 @@ exp.get('/ausgewaehltEngli', function(req, res) {
 	res.writeHead(200, {"Content-Type": "text/html"});
 	res.write("<html><body><p>Hello!</p> "); 
 	res.write(" <p> "); 
-	res.write("  I am jean-michel lorenzi.<br>"); 
-	res.write("  I teach French.");  
+	res.write("  I am jean-michel lorenzi.<br>");  
 	res.write(" <p> "); 
 	res.write("</body></html>");
 	res.end()
@@ -66,8 +64,7 @@ exp.get('/ausgewaehltDeuts', function(req, res) {
 	res.writeHead(200, {"Content-Type": "text/html"});
 	res.write("<html><body><p><p>Gr&uuml;&szlig; Gott!</p> ");  
 	res.write(" <p> "); 
-	res.write("  Ich hei&szlig;e Jean-Michel Lorenzi. <br>"); 
-	res.write("  Ich unterrichte Franz&ouml;sisch.");  
+	res.write("  Ich hei&szlig;e Jean-Michel Lorenzi. <br>");  
 	res.write(" <p> "); 
 	res.write("</body></html>");
 	res.end()
@@ -79,8 +76,7 @@ exp.get('/ausgewaehltItali', function(req, res) {
 	res.writeHead(200, {"Content-Type": "text/html"});
 	res.write("<html><body><p><p>Buon Giorno!</p> ");  
 	res.write(" <p> "); 
-	res.write("  Mi chiamo Jean-Michel Lorenzi. <br>"); 
-	res.write("  Insegno il francese.");  
+	res.write("  Mi chiamo Jean-Michel Lorenzi. <br>");  
 	res.write(" <p> "); 
 	res.write("</body></html>");
 	res.end()
@@ -91,8 +87,7 @@ exp.get('/ausgewaehltPortu', function(req, res) {
 	res.writeHead(200, {"Content-Type": "text/html"});
 	res.write("<html><body><p><p>Bom dia!</p> ");  
 	res.write(" <p> "); 
-	res.write("  Eu chamo-me Jean-Michel Lorenzi. <br>"); 
-	res.write("  Eu dou li&ccedil;&otilde;es de Franc&ecirc;s.");  
+	res.write("  Eu chamo-me Jean-Michel Lorenzi. <br>");  
 	res.write(" <p> "); 
 	res.write("</body></html>");
 	res.end()
@@ -105,8 +100,7 @@ exp.get('/ausgewaehltSpani', function(req, res) {
 	res.writeHead(200, {"Content-Type": "text/html"});
 	res.write("<html><body><p><p>Hola!</p> ");  
 	res.write(" <p> "); 
-	res.write("  Me llamo Jean-Michel Lorenzi. <br>"); 
-	res.write("  Doy lecciones de Franc&egrave;s.");  
+	res.write("  Me llamo Jean-Michel Lorenzi. <br>");  
 	res.write(" <p> "); 
 	res.write("</body></html>");
 	res.end()
@@ -117,8 +111,7 @@ exp.get('/ausgewaehltUngar', function(req, res) {
 	res.writeHead(200, {"Content-Type": "text/html"});
 	res.write("<html><body><p><p>Szia!</p> ");  
 	res.write(" <p> "); 
-	res.write("  Lorenzi Jean-Michelnek h&iacute;vnak. <br>"); 
-	res.write("  Tanitok franci&aacute;ul.");  
+	res.write("  Lorenzi Jean-Michelnek h&iacute;vnak. <br>");  
 	res.write(" <p> "); 
 	res.write("</body></html>");
 	res.end()
@@ -185,7 +178,7 @@ exp.get('/zeigen', callback  );
 if(true)
 exp.get('/', function(request, response){ request.url="/index2.html"; return callback(request, response) }  ); 
 exp.get('/js/app.js', callback  );
-exp.get('/databases/Preistabelle.json', callback  ); 
+exp.get('/js/databases/Preistabelle.json', callback  ); 
 
 function start(routing){ 
 	console.log('__dirname=' +__dirname); 
