@@ -1,0 +1,9 @@
+[
+ {"Sprache":"Ihre beste Sprache :","Preis":"Preis je Unterrichteinheit (min 1Std,  max 3Std)  :"},  
+ {"Sprache":"Englisch(US)","Preis":"30$" },
+  {"Sprache":"Englisch(UK)","Preis": "15€" },
+  {"Sprache":"Spanisch","Preis": "8€" }, 
+  {"Sprache":"Italienisch","Preis": "8€" }, 
+  {"Sprache":"Ungarisch","Preis": "7000 forint " }, 
+  {"Sprache":"Portugisiesch","Preis": "7€" } 
+]
