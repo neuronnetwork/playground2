@@ -74,7 +74,7 @@ app.controller('SlicedsprachenCtrl',function($scope, $http){
 				$( "#"+"linkausgewaehlt"+ Uebersetzungen[j].auf).html(Uebersetzung[j] )  
 		} 
 		$scope.Sprachenauswahl =function (Sprache){   //transferedde into GET
-			$scope.ueber_die_Sprache_wanken(Sprache);  
+			$scope.ueber_die_Sprache_wanken(Sprache); 
 			var text; 
 				$http.get('ausgewaehlt'+Sprache.slice(0,5)).then(function(Antwort) {
 					$("#Hauptkoerper").html(Antwort.data+"");
@@ -89,7 +89,7 @@ app.controller('SlicedsprachenCtrl',function($scope, $http){
 	 
   .controller('PreistabelleCtrl',function($scope, $http){  
 		//$http.get('JSON_Uebersetzungen').then(function(Antwort) { : if i change server.js conformly instead of:
-    $http.get('databases/Preistabelle.json').then(function(Antwort) {
+    $http.get('js/databases/Preistabelle.json').then(function(Antwort) {
       $scope.Preistabelle = Antwort.data;
     });
   })  
