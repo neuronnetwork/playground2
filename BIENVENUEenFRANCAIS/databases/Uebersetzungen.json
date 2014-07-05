@@ -1,0 +1,37 @@
+[
+		{"auf":"Deutsch", "Uebersetzung":
+			["Deutsch","Englisch","Französisch","Portugiesisch",
+			"Spanisch","Italienisch","Ungarisch"
+			]
+			},{
+			"auf":"Englisch", "Uebersetzung":
+			["German","English","French","Portuguese",
+			"Spanish","Italian","Hungarian"
+			]
+			},{
+			"auf":"Französisch", "Uebersetzung":
+			["Allemand","Anglais","Français","Portugais",
+			"Espagnol","Italien","Hongrois"
+			]
+			},{  
+			"auf":"Portugiesisch", "Uebersetzung":
+			["alemão","inglês","francês","portugês",
+			"espanhol","italiano","húngaro"
+			]
+			},{ 
+			"auf":"Spanisch", "Uebersetzung": 
+			["alemán","inglés","francés","portugués",
+			"español","italiano","húngaro"
+			]
+			},{ 		 
+			"auf":"Italienisch", "Uebersetzung": 
+			["tedesco","inglese","francese","portoghese",
+			"spagnolo","italiano","ungherese"
+			]
+			},{ 	 
+			"auf":"Ungarisch", "Uebersetzung": 
+			["németül","angolul","franciául","portugálul",
+			"spanyolul","olaszul","magyarul"
+			]
+		}
+		]

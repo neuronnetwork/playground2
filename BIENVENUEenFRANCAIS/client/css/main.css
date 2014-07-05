@@ -1,0 +1,27 @@
+
+#Hauptkoerper{ 
+    padding-left: 50px;
+} 
+    
+span.Sprachen { 
+    color: #4444FF;  
+	font-weight:600;
+} 
+
+span.Sprachen :hover {  
+    color: #0000FF; 
+	background-color:#F3F1F1;  
+    padding-left: 0px;
+} 
+
+footer {
+position: fixed;
+bottom: 0;
+left: 0;
+right: 0;
+height: 30px;
+}
+
+img.photos{
+    padding-left: 90%;
+}
