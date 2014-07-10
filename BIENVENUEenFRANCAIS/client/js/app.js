@@ -94,6 +94,12 @@ app.controller('SlicedsprachenCtrl',function($scope, $http){
     });
   })  
   
+  .controller('UEtabelleCtrl',function($scope, $http){  
+   $http.get('js/databases/Unterrichteinheit.json').then(function(Antwort) {
+      $scope.Unterrichteinheitstabelle = Antwort.data;
+    });
+  })   
+
  
   
  

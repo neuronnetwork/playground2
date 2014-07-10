@@ -2,7 +2,7 @@
 <html ng-app="bienvenueenfrancaisApp">
 <head>
   <meta charset="utf8">
-  <title>C++/Java lernen.  </title>  
+  <title>Preise C++/Java unterricht.  </title>  
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/main.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.js"></script>
@@ -11,24 +11,20 @@
 </head>
 
 </head>
-<body> 
- <br>Die Preise je <a href="http:Erklärung_von_Unterricht.html">Unterricht</a>:
-	<br>
-	<br>
-	<br>
-	<br>
+<body>   
 	</p>
-	</div> 
+	</div>  
 	<div> 
-	<table class="table" ng-controller="PreistabelleCtrl">
-		<tr ng-repeat="row in Preistabelle  ">
-			<td>{{row.Sprache}}</td> 
+	<table class="table" ng-controller="UEtabelleCtrl">
+		<tr ng-repeat="row in Unterrichteinheitstabelle  "> 
+			<td>{{row.UE}}</td> 
+			<td>{{row.Nummer}}</td> 
 			<td>{{row.Preis}}</td> 
 		</tr>
 	</table> 
 		
 		<br>
-		Zurück zu <a href="http:index.html">mir</a>?<br>
+		Zurück zu <a href="http:index.html">mir</a>?<br><br><br><br>
  <footer> <small>Webside author: <b> Jean-Michel Lorenzi</b>   © 2014 </small></footer>
 </body>
 </html>
