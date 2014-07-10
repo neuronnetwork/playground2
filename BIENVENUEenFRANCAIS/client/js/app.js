@@ -19,19 +19,9 @@ app.config(function($routeProvider, $locationProvider, $httpProvider) {
 			}).when('/pagasdasde2', {
 				templateUrl : '/partials/page2.html' 
 			}) ; 
-		});
-app
- .controller('ArticlesCtrl', function($scope, $http){ 
-		$scope.articles =[
-			  {"id": "1", "name": "Pizza Vegetaria", "price": 500 },
-			  {"id": "2", "name": "Pizza Salami",    "price": 5.5 },
-			  {"id": "3", "name": "Pizza Thunfisch", "price": 6 },
-			  {"id": "4", "name": "Aktueller Flyer", "price": 0 }
-			]
+		});   
 
- })  
-
-  .controller('SprachenCtrl',function($scope){
+ app.controller('SprachenCtrl',function($scope){
     $scope.Sprachen =  Sprachen;	
   })  
    
