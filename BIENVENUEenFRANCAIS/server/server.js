@@ -48,30 +48,25 @@ exp.get('/ausgewaehltFranz', function(req, res) {
 	
 })
   
-exp.get('/ausgewaehltEngli', function(req, res) {  
-	console.log('/ausgewaehltEngli     ...');    
-	res.writeHead(200, {"Content-Type": "text/html"});
+exp.get('/ausgewaehltEngli', function(req, res) {   
+	var Name='/ausgewaehltEngli';
+	Name=Name.slice("/ausgewaehlt".length); 
+	res.writeHead(200, {"Content-Type": "text/html"}); 
 	res.write("<html><body><p>Hello!</p> "); 
 	res.write(" <p> "); 
 	res.write("  I am jean-michel lorenzi.<br>"); 
 	res.write("  I teach French.");  
 	res.write(" <p> "); 
 	res.write("</body></html>");
-	res.end()
-	
+	res.end() 
 })
   
 exp.get('/ausgewaehltDeuts', function(req, res) {  
-	console.log('/ausgewaehltDeuts     ...');    
-	res.writeHead(200, {"Content-Type": "text/html"});
-	res.write("<html><body><p><p>Gr&uuml;&szlig; Gott!</p> ");  
-	res.write(" <p> "); 
-	res.write("  Ich hei&szlig;e Jean-Michel Lorenzi. <br>"); 
-	res.write("  Ich unterrichte Franz&ouml;sisch.");  
-	res.write(" <p> "); 
-	res.write("</body></html>");
-	res.end()
-	
+	var Name='/ausgewaehltDeuts';    
+	Name=Name.slice("/ausgewaehlt".length); 
+	var data = fs.readFileSync("../client/templates/partials/Heim_auf_"+Name+".html","utf-8")
+	res.write(data);   
+	res.end()	 
 }) 
 
 exp.get('/ausgewaehltItali', function(req, res) {  
